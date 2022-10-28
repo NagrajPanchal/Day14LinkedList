@@ -1,4 +1,4 @@
-// UC-2 create Linked List by adding 30 and 56 to 70
+// UC-3 create Linked List by appending 30 and 56 to 70
 package com.bridgelabz.linkedlist;
 
 public class LinkedList <T>
@@ -32,11 +32,19 @@ Node<T> tail;
             head = newNode;
         }
     }
-    @Override
-    public String toString() {
-        return "LinkedList{" +
-                "head=" + head +
-                ", tail=" + tail +
-                '}';
+    public void append(T data)
+    {
+        Node<T> newNode = new Node<>(data);
+        if(head == null)
+        {
+            head = newNode;
+            tail = newNode;
+        }
+        else
+        {
+            newNode.setNext(tail);
+            tail = newNode;
+            head = newNode;
+        }
     }
 }
