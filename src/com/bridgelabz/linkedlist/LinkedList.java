@@ -1,4 +1,4 @@
-// UC-5 Delete the first element in the LinkedList
+// UC-6 Delete the last element in the LinkedList
 
 package com.bridgelabz.linkedlist;
 
@@ -80,5 +80,14 @@ Node<T> tail;
         T data = head.getData();
         head = head.getNext();
         return data;
+    }
+    public T popLast() {
+        if (head == null)
+            return null;
+        else {
+            T data = head.getData();
+            head = head.getNext();
+            return data;
+        }
     }
 }

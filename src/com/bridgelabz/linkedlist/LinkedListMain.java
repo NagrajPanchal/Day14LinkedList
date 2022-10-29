@@ -1,4 +1,4 @@
-// UC-5 Delete the first element in the LinkedList
+// UC-6 Delete the Last element in the LinkedList
 
 package com.bridgelabz.linkedlist;
 
@@ -37,7 +37,19 @@ public class LinkedListMain
         System.out.println("********** : Display linked list without delete : *********");
         linkedList4.display();  // Display Node Elements
         System.out.println("********** : Display linked list after delete the element : *********");
-        linkedList4.pop(); // Delete a head node
+        System.out.println("Popped element : "+linkedList4.pop()); // Delete a head node
         linkedList4.display(); // Display Node Elements
+
+        LinkedList<Integer> linkedList5=new LinkedList<>();
+        System.out.println("********* : Delete a Node from tail using popLast method : **********");
+        linkedList5.push(70);
+        linkedList5.push(30);
+        linkedList5.push(56);
+        System.out.println("********** : Display linked list without delete : *********");
+        linkedList5.display();  // Display Node Elements
+        System.out.println("********** : Display linked list after delete the element : *********");
+        System.out.println("Popped Elements : "+linkedList5.popLast());
+         // Delete a tail node
+        linkedList5.display(); // Display Node Elements
     }
 }
