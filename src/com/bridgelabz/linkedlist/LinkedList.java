@@ -1,4 +1,5 @@
-// UC-4 Insert a node 30 in between 56 and 70
+// UC-5 Delete the first element in the LinkedList
+
 package com.bridgelabz.linkedlist;
 
 public class LinkedList <T>
@@ -73,5 +74,11 @@ Node<T> tail;
         else
             System.out.println("Node not found unable to insert New Node ");
         return false;
+    }
+    public T pop()
+    {
+        T data = head.getData();
+        head = head.getNext();
+        return data;
     }
 }

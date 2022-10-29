@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32bf4d2e-e91a-4187-886b-c11a9b850622" name="Changes" comment="Added : Append method add from tail node">
+    <list default="true" id="32bf4d2e-e91a-4187-886b-c11a9b850622" name="Changes" comment="Added : UC-4 Insert a Node in between">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListMain.java" afterDir="false" />
@@ -106,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667045248043</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added : UC-4 Insert a Node in between">
+      <created>1667047771490</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1667047771490</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +132,7 @@
     <MESSAGE value="Added : UC2 Adding Push method" />
     <MESSAGE value="Added : UC3 Append method add from head node" />
     <MESSAGE value="Added : Append method add from tail node" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : Append method add from tail node" />
+    <MESSAGE value="Added : UC-4 Insert a Node in between" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added : UC-4 Insert a Node in between" />
   </component>
 </project>
