@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32bf4d2e-e91a-4187-886b-c11a9b850622" name="Changes" comment="Added : UC2 Adding Push method">
+    <list default="true" id="32bf4d2e-e91a-4187-886b-c11a9b850622" name="Changes" comment="Added : UC3 Append method add from head node">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListMain.java" afterDir="false" />
@@ -35,12 +35,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/bridgelabz/Practice-batch205&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="LinkedListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.linkedlist.LinkedListMain" />
@@ -91,7 +92,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666985009622</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added : UC3 Append method add from head node">
+      <created>1666986017529</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666986017529</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,6 +116,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added : UC-1 Create Sample Linked List" />
     <MESSAGE value="Added : UC2 Adding Push method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : UC2 Adding Push method" />
+    <MESSAGE value="Added : UC3 Append method add from head node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added : UC3 Append method add from head node" />
   </component>
 </project>
