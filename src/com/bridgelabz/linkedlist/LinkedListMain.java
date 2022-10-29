@@ -1,4 +1,4 @@
-// UC-4 Insert a node 30 in between 56 and 70
+// UC-5 Delete the first element in the LinkedList
 
 package com.bridgelabz.linkedlist;
 
@@ -28,5 +28,16 @@ public class LinkedListMain
         System.out.println("******** : Display linked list insert a node in between : *******");
         linkedList3.insertAfter(56,30);
         linkedList3.display(); // Display Node elements
+
+        LinkedList<Integer> linkedList4=new LinkedList<>();
+        System.out.println("********* : Delete a Node from head using pop method : **********");
+        linkedList4.push(70);
+        linkedList4.push(30);
+        linkedList4.push(56);
+        System.out.println("********** : Display linked list without delete : *********");
+        linkedList4.display();  // Display Node Elements
+        System.out.println("********** : Display linked list after delete the element : *********");
+        linkedList4.pop(); // Delete a head node
+        linkedList4.display(); // Display Node Elements
     }
 }
