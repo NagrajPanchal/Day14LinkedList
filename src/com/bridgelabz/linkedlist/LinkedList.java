@@ -42,9 +42,8 @@ Node<T> tail;
         }
         else
         {
-            newNode.setNext(tail);
+            tail.setNext(newNode);
             tail = newNode;
-            head = newNode;
         }
     }
 }
