@@ -1,4 +1,4 @@
-// UC-3 create Linked List by appending 30 and 56 to 70
+// UC-4 Insert a node 30 in between 56 and 70
 
 package com.bridgelabz.linkedlist;
 
@@ -18,5 +18,15 @@ public class LinkedListMain
         linkedList2.append(30);
         linkedList2.append(56);
         linkedList2.display(); // Display Node elements
+
+        LinkedList<Integer> linkedList3=new LinkedList<>();
+        System.out.println("\n******** : Insert a node in between : *********");
+        linkedList3.append(56);
+        linkedList3.append(70);
+        System.out.println("********** : Display linked list without insert : *********");
+        linkedList3.display(); // Display Node elements
+        System.out.println("******** : Display linked list insert a node in between : *******");
+        linkedList3.insertAfter(56,30);
+        linkedList3.display(); // Display Node elements
     }
 }
