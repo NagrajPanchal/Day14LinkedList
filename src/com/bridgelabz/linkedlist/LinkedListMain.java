@@ -1,4 +1,4 @@
-// UC-8 Insert 40 after 30 to the Linked List sequence of 56->30->70
+// UC-9 delete 40 from the Linked List sequence of 56->30->40->70 and show the size of LinkedList sequence of 56->30->70
 
 package com.bridgelabz.linkedlist;
 
@@ -7,14 +7,14 @@ public class LinkedListMain
     public static void main(String[] args) {
         LinkedList<Integer> linkedList1=new LinkedList<>();
         System.out.println("********* : Linked List using Push : Element Add from head : **********");
-        linkedList1.push(70);
+        linkedList1.push(70); // Add Node from head
         linkedList1.push(30);
         linkedList1.push(56);
         linkedList1.display();  // Display Node Elements
 
         LinkedList<Integer> linkedList2=new LinkedList<>();
         System.out.println("\n******** : Linked List using Append : Element add from tail : *********");
-        linkedList2.append(70);
+        linkedList2.append(70); // Add node from tail
         linkedList2.append(30);
         linkedList2.append(56);
         linkedList2.display(); // Display Node elements
@@ -33,7 +33,7 @@ public class LinkedListMain
         System.out.println("********* : Delete a Node from head using pop method : **********");
         linkedList4.push(70);
         linkedList4.push(30);
-        linkedList4.push(56);
+        linkedList4.push(56); // Head Node Delete
         System.out.println("********** : Display linked list without delete : *********");
         linkedList4.display();  // Display Node Elements
         System.out.println("********** : Display linked list after delete the element : *********");
@@ -42,7 +42,7 @@ public class LinkedListMain
 
         LinkedList<Integer> linkedList5=new LinkedList<>();
         System.out.println("********* : Delete a Node from tail using popLast method : **********");
-        linkedList5.push(70);
+        linkedList5.push(70); // Tail Node Delete
         linkedList5.push(30);
         linkedList5.push(56);
         System.out.println("********** : Display linked list without delete : *********");
@@ -54,7 +54,7 @@ public class LinkedListMain
         LinkedList<Integer> linkedList6=new LinkedList<>();
         System.out.println("********* : Display the Linked List Elements for Search operation : **********");
         linkedList6.push(70);
-        linkedList6.push(30);
+        linkedList6.push(30); // Search a node
         linkedList6.push(56);
         linkedList6.display();  // Display Node Elements
         if(linkedList6.search(30) == null)
@@ -65,12 +65,24 @@ public class LinkedListMain
         LinkedList<Integer> linkedList7=new LinkedList<>();
         System.out.println("\n******** : Insert a node After the element in between : *********");
         linkedList7.append(56);
-        linkedList7.append(30);
+        linkedList7.append(30); // Insert Node after 30 Node
         linkedList7.append(70);
         System.out.println("********** : Display linked list without insert After Node : *********");
         linkedList7.display(); // Display Node elements
         System.out.println("******** : Display linked list insert After a node in between : *******");
         linkedList7.insertAfter(30,40);
         linkedList7.display(); // Display Node elements
+
+        LinkedList<Integer> linkedList8=new LinkedList<>();
+        System.out.println("********* : Delete a Node in-between the linked List : **********");
+        linkedList8.push(70);
+        linkedList8.push(40); // Pop
+        linkedList8.push(30);
+        linkedList8.push(56);
+        System.out.println("********** : Display linked list without delete : *********");
+        linkedList8.display();  // Display Linked List
+        System.out.println("********** : Display linked list after delete the element : *********");
+        System.out.println("Popped Elements : "+linkedList8.popSearchNode(40));
+        linkedList8.display(); // Display Node Elements
     }
 }
