@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32bf4d2e-e91a-4187-886b-c11a9b850622" name="Changes" comment="Added : UC-6 Delete Last Element Using popLast method">
+    <list default="true" id="32bf4d2e-e91a-4187-886b-c11a9b850622" name="Changes" comment="Added : UC-7 Search a linked list to find a node">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/Node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="UC6-Delete_Last_Element" />
+        <entry key="$PROJECT_DIR$" value="UC7-Search_LinkedList_To_Find_Node" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667120858740</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added : UC-7 Search a linked list to find a node">
+      <created>1667122638426</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1667122638426</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -157,6 +163,7 @@
     <MESSAGE value="Added : UC-4 Insert a Node in between" />
     <MESSAGE value="Added : UC-5 Delete First Element Using pop method" />
     <MESSAGE value="Added : UC-6 Delete Last Element Using popLast method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : UC-6 Delete Last Element Using popLast method" />
+    <MESSAGE value="Added : UC-7 Search a linked list to find a node" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added : UC-7 Search a linked list to find a node" />
   </component>
 </project>
