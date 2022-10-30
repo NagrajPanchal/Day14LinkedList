@@ -49,7 +49,6 @@ public class LinkedListMain
         linkedList5.display();  // Display Node Elements
         System.out.println("********** : Display linked list after delete the element : *********");
         System.out.println("Popped Elements : "+linkedList5.popLast());
-         // Delete a tail node
         linkedList5.display(); // Display Node Elements
     }
 }

@@ -28,4 +28,5 @@ private Node<T> next;
     public Node(T data){
         this.data = data;
     }
+
 }

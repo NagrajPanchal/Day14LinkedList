@@ -6,6 +6,7 @@ public class LinkedList <T>
 {
 Node<T> head;
 Node<T> tail;
+
     public void display()
     {
         Node<T> temp = head;
@@ -81,13 +82,16 @@ Node<T> tail;
         head = head.getNext();
         return data;
     }
-    public T popLast() {
-        if (head == null)
-            return null;
-        else {
-            T data = head.getData();
-            head = head.getNext();
-            return data;
+    public T popLast()
+    {
+        T data = tail.getData();  // tail data
+        Node<T> secondLast = head; // Consider new node variable secondLast as Head
+        while (secondLast.getNext() != tail) // loop the condition up to secondlast node is not a tail
+        {
+            secondLast = secondLast.getNext(); // after loop is satisfy we found second Last Node
         }
+        tail = secondLast; // Now we make it as second last node is tail
+        tail.setNext(null); // set a next is null because of tail point out reference always null
+        return data; // returned old tail data or popped element
     }
 }
