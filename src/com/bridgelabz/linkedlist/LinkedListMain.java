@@ -1,4 +1,4 @@
-// UC-6 Delete the Last element in the LinkedList
+// UC-7 Search a linked list to find a node with value 30
 
 package com.bridgelabz.linkedlist;
 
@@ -50,5 +50,14 @@ public class LinkedListMain
         System.out.println("********** : Display linked list after delete the element : *********");
         System.out.println("Popped Elements : "+linkedList5.popLast());
         linkedList5.display(); // Display Node Elements
+
+        LinkedList<Integer> linkedList6=new LinkedList<>();
+        System.out.println("********* : Display the Linked List Elements for Search operation : **********");
+        linkedList6.push(70);
+        linkedList6.push(30);
+        linkedList6.push(56);
+        linkedList6.display();  // Display Node Elements
+        linkedList6.search(30);
+
     }
 }
