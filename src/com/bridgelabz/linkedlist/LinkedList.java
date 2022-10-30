@@ -1,4 +1,4 @@
-// UC-7 Search a linked list to find a node with value 30
+// UC-8 Insert 40 after 30 to the Linked List sequence of 56->30->70
 
 package com.bridgelabz.linkedlist;
 
@@ -55,10 +55,7 @@ Node<T> tail;
             if(temp.getData().equals(searchData))
                 return  temp;
             temp = temp.getNext();
-            System.out.println("Searched element found! in the Linked List");
         }
-        if(temp == null)
-            System.out.println("Searched element not found!!!");
         return null;
     }
     public boolean insertAfter(T searchData, T insertData)
