@@ -1,4 +1,4 @@
-// UC-8 Insert 40 after 30 to the Linked List sequence of 56->30->70
+// UC-9 delete 40 from the Linked List sequence of 56->30->40->70 and show the size of LinkedList sequence of 56->30->70
 
 package com.bridgelabz.linkedlist;
 
@@ -89,5 +89,21 @@ Node<T> tail;
         tail = secondLast; // Now we make it as second last node is tail
         tail.setNext(null); // set a next is null because of tail point out reference always null
         return data; // returned old tail data or popped element
+    }
+    public boolean popSearchNode(T searchDeleteData)
+    {
+        if(search(searchDeleteData) != null)
+        {
+            Node<T> nextNode = search(searchDeleteData).getNext();
+            Node<T> previousNode = head;
+            while (previousNode != null){
+                if(previousNode.getData().equals(searchDeleteData))
+                    previousNode = previousNode.getNext();
+            }
+            nextNode.setNext(previousNode);
+        }
+        else
+            System.out.println("Node not found unable to Delete a node ");
+        return false;
     }
 }
