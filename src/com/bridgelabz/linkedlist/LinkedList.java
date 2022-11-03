@@ -2,84 +2,73 @@
 
 package com.bridgelabz.linkedlist;
 
-public class LinkedList <T>
-{
-Node<T> head;
-Node<T> tail;
+public class LinkedList <T> {
+    Node<T> head;
+    Node<T> tail;
 
-    public void display()
-    {
+    public void display() {
         Node<T> temp = head;
-        if(head == null)
-        {
+        if (head == null) {
             System.out.println("Linked list is Empty");
         }
-        while(temp != null)
-        {
-            System.out.print(temp.getData()+ " -> ");
+        while (temp != null) {
+            System.out.print(temp.getData() + " -> ");
             temp = temp.getNext();
         }
         System.out.println();
     }
-    public void push(T data)
-    {
+
+    public void push(T data) {
         Node<T> newNode = new Node<>(data);
-        if(head == null)
-        {
+        if (head == null) {
             head = newNode;
             tail = newNode;
-        }
-        else {
+        } else {
             newNode.setNext(head);
             head = newNode;
         }
     }
-    public void append(T data)
-    {
+
+    public void append(T data) {
         Node<T> newNode = new Node<>(data);
-        if(head == null)
-        {
+        if (head == null) {
             head = newNode;
             tail = newNode;
-        }
-        else
-        {
+        } else {
             tail.setNext(newNode);
             tail = newNode;
         }
     }
-    public Node<T> search(T searchData)
-    {
+
+    public Node<T> search(T searchData) {
         Node<T> temp = head;
-        while (temp != null){
-            if(temp.getData().equals(searchData))
-                return  temp;
+        while (temp != null) {
+            if (temp.getData().equals(searchData))
+                return temp;
             temp = temp.getNext();
         }
         return null;
     }
-    public boolean insertAfter(T searchData, T insertData)
-    {
-        if(search(searchData) != null)
-        {
+
+    public boolean insertAfter(T searchData, T insertData) {
+        if (search(searchData) != null) {
             Node<T> nextNode = search(searchData).getNext();
             Node<T> newNode = new Node<>(insertData);
             search(searchData).setNext(newNode);
             newNode.setNext(nextNode);
             return true;
-        }
-        else
+        } else
             System.out.println("Node not found unable to insert New Node ");
         return false;
     }
-    public T pop()
-    {
+
+    public T pop() {
         T data = head.getData();
         head = head.getNext();
         return data;
     }
-    public T popLast()
-    {
+
+    public T popLast() {
         T data = tail.getData();  // tail data
         Node<T> secondLast = head; // Consider new node variable secondLast as Head
         while (secondLast.getNext() != tail) // loop the condition up to secondlast node is not a tail
@@ -92,18 +81,20 @@ Node<T> tail;
     }
     public boolean popSearchNode(T searchDeleteData)
     {
-        if(search(searchDeleteData) != null)
-        {
-            Node<T> nextNode = search(searchDeleteData).getNext();
-            Node<T> previousNode = head;
-            while (previousNode != null){
-                if(previousNode.getData().equals(searchDeleteData))
-                    previousNode = previousNode.getNext();
+        Node<T> deleteNode=search(searchDeleteData);
+        Node<T> temp = head;
+        while (temp!=null) {
+            if (temp == deleteNode){
+                head = deleteNode.getNext();
+                break;
             }
-            nextNode.setNext(previousNode);
+            else if (temp.getNext() == deleteNode) {
+                temp.setNext(deleteNode.getNext());
+                deleteNode.setNext(null);
+                return true;
+            }
+            temp=temp.getNext();
         }
-        else
-            System.out.println("Node not found unable to Delete a node ");
         return false;
     }
 }
