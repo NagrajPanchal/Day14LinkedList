@@ -30,7 +30,7 @@ public class LinkedListMain
         linkedList3.display(); // Display Node elements
 
         LinkedList<Integer> linkedList4=new LinkedList<>();
-        System.out.println("********* : Delete a Node from head using pop method : **********");
+        System.out.println("\n********* : Delete a Node from head using pop method : **********");
         linkedList4.push(70);
         linkedList4.push(30);
         linkedList4.push(56); // Head Node Delete
@@ -41,7 +41,7 @@ public class LinkedListMain
         linkedList4.display(); // Display Node Elements
 
         LinkedList<Integer> linkedList5=new LinkedList<>();
-        System.out.println("********* : Delete a Node from tail using popLast method : **********");
+        System.out.println("\n********* : Delete a Node from tail using popLast method : **********");
         linkedList5.push(70); // Tail Node Delete
         linkedList5.push(30);
         linkedList5.push(56);
@@ -52,7 +52,7 @@ public class LinkedListMain
         linkedList5.display(); // Display Node Elements
 
         LinkedList<Integer> linkedList6=new LinkedList<>();
-        System.out.println("********* : Display the Linked List Elements for Search operation : **********");
+        System.out.println("\n********* : Display the Linked List Elements for Search operation : **********");
         linkedList6.push(70);
         linkedList6.push(30); // Search a node
         linkedList6.push(56);
@@ -74,7 +74,7 @@ public class LinkedListMain
         linkedList7.display(); // Display Node elements
 
         LinkedList<Integer> linkedList8=new LinkedList<>();
-        System.out.println("********* : Delete a Node in-between the linked List : **********");
+        System.out.println("\n********* : Delete a Node in-between the linked List : **********");
         linkedList8.push(70);
         linkedList8.push(40); // Pop
         linkedList8.push(30);
@@ -82,7 +82,7 @@ public class LinkedListMain
         System.out.println("********** : Display linked list without delete : *********");
         linkedList8.display();  // Display Linked List
         System.out.println("********** : Display linked list after delete the element : *********");
-        System.out.println("Popped Elements : "+linkedList8.popSearchNode(40));
+        linkedList8.popSearchNode(40);
         linkedList8.display(); // Display Node Elements
     }
 }
