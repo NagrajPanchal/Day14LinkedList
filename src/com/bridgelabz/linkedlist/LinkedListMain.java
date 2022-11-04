@@ -1,4 +1,4 @@
-// UC-9 delete 40 from the Linked List sequence of 56->30->40->70 and show the size of LinkedList sequence of 56->30->70
+// UC-Ability to create Ordered Linked List in ascending order of data entered in following sequence 56, 30, 40, and 70
 
 package com.bridgelabz.linkedlist;
 
@@ -84,5 +84,18 @@ public class LinkedListMain
         System.out.println("********** : Display linked list after delete the element : *********");
         linkedList8.popSearchNode(40);
         linkedList8.display(); // Display Node Elements
+
+        LinkedList<Integer> linkedList9=new LinkedList<>();
+        System.out.println("\n****** : Ascending ordered linked List : *******");
+        linkedList9.push(70); // Sort all elements in Ascending ordered
+        linkedList9.push(40);
+        linkedList9.push(30);
+        linkedList9.push(56);
+        System.out.println("********** : Display linked list without order : *********");
+        linkedList9.display();  // Display Linked List
+        System.out.println("********** : Display linked list after Ascending order : *********");
+        int[] arr = {56,30,40,70};
+        linkedList9.ascendingOrderSort(arr);
+        linkedList9.printAscendingOrderedSort(arr);
     }
 }
