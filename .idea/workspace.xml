@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32bf4d2e-e91a-4187-886b-c11a9b850622" name="Changes" comment="Added : UC-9 delete a searched node">
+    <list default="true" id="32bf4d2e-e91a-4187-886b-c11a9b850622" name="Changes" comment="Added : UC-10 Ascending ordered linked List sorted elements">
+      <change afterPath="$PROJECT_DIR$/src/com/bridgelabz/stack/Stack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/bridgelabz/stack/StackMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/linkedlist/LinkedListMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +42,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/bridgelabz/Practice-batch205&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StackMain">
     <configuration name="LinkedListMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.bridgelabz.linkedlist.LinkedListMain" />
       <module name="Day14LinkedList" />
@@ -56,8 +56,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StackMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.stack.StackMain" />
+      <module name="Day14LinkedList" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.stack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StackMain" />
         <item itemvalue="Application.LinkedListMain" />
       </list>
     </recent_temporary>
@@ -162,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667519689340</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added : UC-10 Ascending ordered linked List sorted elements">
+      <created>1667520488322</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1667520488322</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -187,6 +208,7 @@
     <MESSAGE value="Added : UC-7 Search a linked list to find a node" />
     <MESSAGE value="Added : UC-8 Insert After a Node in Linked List" />
     <MESSAGE value="Added : UC-9 delete a searched node" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : UC-9 delete a searched node" />
+    <MESSAGE value="Added : UC-10 Ascending ordered linked List sorted elements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added : UC-10 Ascending ordered linked List sorted elements" />
   </component>
 </project>
