@@ -2,7 +2,7 @@
 package com.bridgelabz.linkedlist;
 
 public class LinkedList <T> {
-    Node<T> head;
+    public Node<T> head;
     Node<T> tail;
 
     public void display() {
