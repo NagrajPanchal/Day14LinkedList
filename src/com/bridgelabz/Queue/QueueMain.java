@@ -1,4 +1,4 @@
-// Queue-UC1- Ability to create a Queue of 56->30->70
+// Queue-UC2- Ability to dequeue from the beginning
 package com.bridgelabz.Queue;
 
 public class QueueMain
@@ -11,6 +11,12 @@ public class QueueMain
         queueObject.enQueue(30);
         queueObject.enQueue(70);
         System.out.println("***** Display Queue Elements *****");
+        queueObject.displayQueue();
+        System.out.println("***** Display deQueue Elements *****");
+        queueObject.deQueue(56);
+        queueObject.displayQueue();
+        System.out.println("***** Display deQueue Elements *****");
+        queueObject.deQueue(30);
         queueObject.displayQueue();
     }
 }
