@@ -23,8 +23,5 @@ public class StackMain
         System.out.println("Popped the element top of the stack ");
         stackObject.popStack();
         stackObject.display();
-        System.out.println("Stack is Empty");
-
-
     }
 }
