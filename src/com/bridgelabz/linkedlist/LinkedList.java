@@ -2,13 +2,13 @@
 package com.bridgelabz.linkedlist;
 
 public class LinkedList <T> {
-    Node<T> head;
+    public Node<T> head;
     Node<T> tail;
 
     public void display() {
         Node<T> temp = head;
         if (head == null) {
-            System.out.println("Linked list is Empty");
+            System.out.println("Stack is Empty");
         }
         while (temp != null) {
             System.out.print(temp.getData() + " -> ");
